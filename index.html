@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agro Forte e Futuro Sustentável</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#ffffff;
+color:#333;
+line-height:1.6;
+}
+
+/* TOPO COM AGRICULTOR */
+header{
+background:linear-gradient(rgba(0,80,0,0.6),rgba(0,80,0,0.6)),
+url("https://images.unsplash.com/photo-1507103011901-e954d6d47c08");
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+header h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+header p{
+max-width:700px;
+margin:auto;
+font-size:1.2rem;
+}
+
+/* SEÇÕES */
+section{
+padding:50px 10%;
+}
+
+h2{
+color:#1B5E20;
+margin-bottom:10px;
+}
+
+.card{
+background:#f1fff1;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* IMAGENS */
+img{
+width:100%;
+border-radius:10px;
+margin-top:10px;
+max-height:350px;
+object-fit:cover;
+}
+
+/* GRID TECNOLOGIA */
+.grid{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.box{
+flex:1;
+min-width:250px;
+background:#eaffea;
+padding:15px;
+border-radius:10px;
+}
+
+/* JOGO */
+.jogo{
+background:#e8f5e9;
+padding:25px;
+border-radius:12px;
+text-align:center;
+}
+
+button{
+background:#2E7D32;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#1B5E20;
+}
+
+#resultado{
+margin-top:15px;
+font-weight:bold;
+font-size:18px;
+}
+
+footer{
+background:#1B5E20;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌱 Agro Forte e Futuro Sustentável</h1>
+<p>Equilíbrio entre produção de alimentos e preservação do meio ambiente</p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>🌾 Agricultura e sua importância</h2>
+<p>
+A agricultura é essencial para a vida humana, pois é dela que vêm os alimentos que chegam às cidades.
+Ela envolve o cultivo da terra, criação de animais e uso de recursos naturais.
+Quando feita de forma sustentável, garante alimento e preserva o meio ambiente.
+</p>
+
+<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
+</div>
+
+<div class="card">
+<h2>🚜 Tecnologia no Campo</h2>
+<p>
+A tecnologia ajuda muito o agricultor rural, trazendo mais eficiência e produtividade.
+</p>
+
+<div class="grid">
+
+<div class="box">
+<h3>✔ Coisas boas</h3>
+<p>
+- Mais produção  
+- Menos desperdício  
+- Economia de água  
+- Monitoramento com drones  
+</p>
+</div>
+
+<div class="box">
+<h3>⚠ Coisas ruins</h3>
+<p>
+- Alto custo de máquinas  
+- Dependência de tecnologia  
+- Menos trabalho manual  
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2>🧑‍🌾 FAEP e apoio ao agricultor</h2>
+<p>
+A FAEP (Federação da Agricultura do Estado do Paraná) ajuda os produtores rurais com cursos, treinamentos e apoio técnico.
+Ela incentiva o uso de tecnologia e práticas sustentáveis, fortalecendo o agronegócio e protegendo o meio ambiente.
+</p>
+
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+</div>
+
+<div class="card">
+<h2>🌿 Equilíbrio entre produção e meio ambiente</h2>
+<p>
+Produzir alimentos é importante, mas também é necessário cuidar da natureza.
+O uso consciente da água, do solo e das florestas garante que as futuras gerações também tenham recursos disponíveis.
+</p>
+
+<img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8">
+</div>
+
+</section>
+
+<section>
+
+<div class="jogo">
+
+<h2>🎮 Jogo da Agricultura</h2>
+<p>Responda e descubra se acertou!</p>
+
+<p><b>1. Qual ajuda a monitorar plantações?</b></p>
+<input type="radio" name="q1" value="0"> Trator antigo<br>
+<input type="radio" name="q1" value="1"> Drone<br>
+<input type="radio" name="q1" value="0"> Bicicleta<br>
+
+<p><b>2. O que a agricultura sustentável busca?</b></p>
+<input type="radio" name="q2" value="1"> Preservar o meio ambiente<br>
+<input type="radio" name="q2" value="0"> Desmatar tudo<br>
+<input type="radio" name="q2" value="0"> Poluir rios<br>
+
+<p><b>3. A FAEP ajuda com:</b></p>
+<input type="radio" name="q3" value="1"> Cursos e apoio ao produtor<br>
+<input type="radio" name="q3" value="0"> Poluição<br>
+<input type="radio" name="q3" value="0"> Desmatamento<br>
+
+<br>
+
+<button onclick="verificar()">Ver resultado</button>
+
+<div id="resultado"></div>
+
+</div>
+
+</section>
+
+<footer>
+<p>🌱 Agro Forte e Futuro Sustentável - Produzir com responsabilidade</p>
+</footer>
+
+<script>
+
+function verificar(){
+
+let pontos = 0;
+
+let q1 = document.querySelector('input[name="q1"]:checked');
+let q2 = document.querySelector('input[name="q2"]:checked');
+let q3 = document.querySelector('input[name="q3"]:checked');
+
+if(!q1 || !q2 || !q3){
+document.getElementById("resultado").innerHTML =
+"⚠ Responda todas as perguntas!";
+return;
+}
+
+pontos += Number(q1.value);
+pontos += Number(q2.value);
+pontos += Number(q3.value);
+
+if(pontos == 3){
+document.getElementById("resultado").innerHTML =
+"🎉 Parabéns! Você acertou todas!";
+}else{
+document.getElementById("resultado").innerHTML =
+"Você acertou " + pontos + " de 3 perguntas.";
+}
+
+}
+
+</script>
+
+</body>
+</html>
